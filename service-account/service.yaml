@@ -1,0 +1,6 @@
+imports:
+- path: service_account.jinja
+
+resources:
+- name: test-name
+  type: service_account.jinja

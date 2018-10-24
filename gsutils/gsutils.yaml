@@ -1,0 +1,6 @@
+imports:
+- path: gs-copy.jinja
+
+resources:
+- name: test-copy
+  type: gs-copy.jinja
