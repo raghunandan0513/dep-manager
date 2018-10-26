@@ -19,4 +19,4 @@ resources:
 - name: test-gs
   type: gsutils.jinja
   properties:
-    bucketName: tfstate-backup
+    bucketName: dep-manager-test
