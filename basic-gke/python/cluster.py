@@ -34,7 +34,15 @@ def GenerateConfig(context):
               'cluster': {
                   'name': cluster_name,
                   'initialNodeCount': context.properties['initialNodeCount'],
+
+                  'masterAuth': {
+                      'username': context.properties['username'],
+                      'password': context.properties['password'],
+                  },
                   'nodeConfig': {
+                      'machineType': context.properties['machineType'],
+                      'diskSizeGb': context.properties['diskSizeGb'],
+                      #'serviceAccount': 'default',
                       'oauthScopes': [
                           'https://www.googleapis.com/auth/' + s
                           for s in [

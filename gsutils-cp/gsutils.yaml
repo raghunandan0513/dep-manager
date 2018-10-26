@@ -1,4 +1,4 @@
-# Copyright 2016 Google Inc. All rights reserved.
+# Copyright 2017 Google Inc. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,14 +13,10 @@
 # limitations under the License.
 
 imports:
-- path: cluster.py
+- path: gsutils.jinja
 
 resources:
-- name: basic-gke
-  type: cluster.py
+- name: test-gs
+  type: gsutils.jinja
   properties:
-    zone: us-central1-a
-    clusterName: basic-gke
-    initialNodeCount: 1
-    machineType: 'n1-standard-2'
-    diskSizeGb: 200
+    bucketName: tfstate-backup

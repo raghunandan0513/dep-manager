@@ -35,6 +35,34 @@ properties:
     type: integer
     description: Initial number of nodes desired in the cluster.
     default: 2
+  machineType:
+    type: string
+    default: n1-standard-1
+    description: |
+      The name of the Google Compute Engine machine type.
+  diskSizeGb:
+    type: integer
+    default: 100
+    minimum: 10
+    description: |
+      Size of the disk attached to each node, specified in GB. 
+      The smallest allowed disk size is 10GB
+  username:
+    type: string
+    description: |
+      The username for HTTP basic authentication to the master
+      endpoint. For clusters v1.6.0 and later, you can disable basic
+      authentication by providing an empty username.
+    default: 'testuser'
+  password:
+    type: string
+    description: |
+      The password to use for HTTP basic authentication to the master
+      endpoint. Because the master endpoint is open to the Internet, 
+      you must create a strong password. If a password is provided,
+      'username' must be also provided (non-empty).
+    minLength: 16
+    default: 'testuser12345678'
 
 
 outputs:
