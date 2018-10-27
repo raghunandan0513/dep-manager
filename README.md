@@ -10,8 +10,8 @@
 # Single file
 `template` -  combined all the modules into a single folder <br />
 
-##NOTE
-params are in .yaml file of the respective folders and description is in .schema file of the respective folder <br />
+### NOTE <br />
+params are in .yaml file of the respective folders and description is in .schema file of the respective folder.
 
 ## Steps to setup only one respective resource
 

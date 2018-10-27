@@ -24,4 +24,4 @@ resources:
     initialNodeCount: 1
     machineType: 'n1-standard-2'
     diskSizeGb: 100
-    bucketName: tfstate-backup
+    bucketName: dep-manager-test

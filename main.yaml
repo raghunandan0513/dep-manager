@@ -31,7 +31,7 @@ resources:
 - name: gsutils-cp
   type: gsutils-cp/gsutils.jinja
   properties:
-    bucketName: tfstate-backup
+    bucketName: dep-manager-test
 
 - name: pubsub
   type: pubsub/pubsub.jinja
